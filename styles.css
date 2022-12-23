@@ -82,11 +82,12 @@ body {
     justify-content: center;
     background: rgb(6,5,4);
     /* background: linear-gradient(99deg, rgba(6,5,4,1) 14%, rgba(0,255,251,1) 94%); */
-    background-image: url(./images/backgrounds/bg-1.png);
+    background-image: url(./images/backgrounds/bg-3.png);
     /* background-blend-mode: overlay; */
     background-size:     cover;                  
     background-repeat:   no-repeat;
     background-position: center center;  
+    transition: 1.5s ease;
 }
 
 .container {
@@ -260,3 +261,5 @@ input:hover::placeholder {
     transition: all 0.3s;
     letter-spacing: 2px;
   }
+
+  /* images */
