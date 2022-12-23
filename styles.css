@@ -110,7 +110,7 @@ body {
     align-self: center;
     border-radius: 50px;
     
-    /* From https://css.glass */
+    /* glass */
     background: rgba(255, 255, 255, 0.18);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -146,6 +146,8 @@ input::placeholder {
 input:focus {
     opacity: 1;
     border: solid 1px white;
+    border: 2px solid transparent;
+    border-color: #52a1ae;
     transition: .5s ease;
 }
 
@@ -200,3 +202,55 @@ input:hover::placeholder {
         padding: 4rem;
   }
 }
+
+/* radio */
+    .product-labels {
+        width: 100%;
+    }
+
+  .product-labels__checkbox {
+    display: none;
+  }
+  .product-labels__checkbox:checked + .product-labels__txt {
+    /* border-color: #cc3743; */
+    border-color: #52a1ae;
+    padding: 10px 13px;
+  }
+  .product-labels__title {
+    font-family: "Dosis", sans-serif;
+    font-weight: 700;
+    letter-spacing: 3px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .product-labels__group {
+    display: flex;
+    margin-bottom: 15px;
+    justify-content: center;
+  }
+  @media screen and (max-width: 992px) {
+    .product-labels__group {
+      justify-content: center;
+    }
+  }
+  .product-labels__group:last-child {
+    margin-bottom: 0;
+  }
+  .product-labels__item {
+    margin: 5px;
+    cursor: pointer;
+  }
+  .product-labels__item:first-child {
+    margin-left: 0;
+  }
+  .product-labels__txt {
+    display: block;
+    border: 2px solid transparent;
+    font-size: 14px;
+    padding: 10px 20px;
+    padding-left: 0;
+    border-radius: 50px;
+    transition: all 0.3s;
+    letter-spacing: 2px;
+  }
