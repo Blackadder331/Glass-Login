@@ -16,7 +16,7 @@
     box-sizing: border-box; 
     font-family: "Uni Sans", sans-serif;
     font-weight: 500;
-    letter-spacing: 0.1rem;
+    letter-spacing: 2px;
 }
 
 html, body { 
@@ -81,7 +81,12 @@ body {
     display: flex;
     justify-content: center;
     background: rgb(6,5,4);
-    background: linear-gradient(99deg, rgba(6,5,4,1) 14%, rgba(0,255,251,1) 94%);
+    /* background: linear-gradient(99deg, rgba(6,5,4,1) 14%, rgba(0,255,251,1) 94%); */
+    background-image: url(./images/backgrounds/bg-1.png);
+    /* background-blend-mode: overlay; */
+    background-size:     cover;                  
+    background-repeat:   no-repeat;
+    background-position: center center;  
 }
 
 .container {
@@ -114,9 +119,10 @@ body {
     background: rgba(255, 255, 255, 0.18);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(7.6px);
+    backdrop-filter: blur(19px);
     -webkit-backdrop-filter: blur(7.6px);
-    border: 1px solid rgba(255, 255, 255, 0.21);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    box-shadow: 25px 25px 10px rgba(0, 0, 0, 0.4);
 }
 
 form input {
@@ -147,7 +153,7 @@ input:focus {
     opacity: 1;
     border: solid 1px white;
     border: 2px solid transparent;
-    border-color: #52a1ae;
+    border-color: #38a9ba;
     transition: .5s ease;
 }
 
@@ -174,7 +180,7 @@ input:hover::placeholder {
     opacity: 1;
     font-weight: 900;
     text-transform: uppercase;
-    letter-spacing: .2rem;
+    letter-spacing: 2px;
 
     
     background-color: #38a9ba;
@@ -213,7 +219,7 @@ input:hover::placeholder {
   }
   .product-labels__checkbox:checked + .product-labels__txt {
     /* border-color: #cc3743; */
-    border-color: #52a1ae;
+    border-color: #38a9ba;
     padding: 10px 13px;
   }
   .product-labels__title {
