@@ -1,0 +1,202 @@
+/* CSS resets */
+@font-face {
+    font-family: "Uni Sans";
+    src: url("https://res.cloudinary.com/muhammederdem/raw/upload/v1536168547/unisans-font/UniSansHeavyCAPS.woff2") format("woff2"), url("https://res.cloudinary.com/muhammederdem/raw/upload/v1536168547/unisans-font/UniSansHeavyCAPS.woff") format("woff"), url("https://res.cloudinary.com/muhammederdem/raw/upload/v1536168548/unisans-font/UniSansHeavyCAPS.ttf") format("truetype");
+    font-weight: 900;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Uni Sans";
+    src: url("https://res.cloudinary.com/muhammederdem/raw/upload/v1536168545/unisans-font/UniSansThinCAPS.woff2") format("woff2"), url("https://res.cloudinary.com/muhammederdem/raw/upload/v1536168545/unisans-font/UniSansThinCAPS.woff") format("woff"), url("https://res.cloudinary.com/muhammederdem/raw/upload/v1536168548/unisans-font/UniSansThinCAPS.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+  }
+
+* { 
+    box-sizing: border-box; 
+    font-family: "Uni Sans", sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+}
+
+html, body { 
+    margin: 0; 
+    padding: 0; 
+    font-size: 15px; 
+    /* ^ 15px rem base number for type scaling*/
+    color: white;
+    background-color: #222222;
+    
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+}
+
+h1, h2, h3, h4, h5 {
+    line-height: 1.1;
+}
+
+body,
+input,
+button,
+select,
+textarea {
+    font: 500 1rem "Uni Sans"; 
+    color: white}
+
+a { text-decoration: none; }
+a:link { color: #6A26CD; }
+a:hover { color: #431488; }
+a:active { color: #6A26CD; }
+a:visited { color: #6A26CD; }
+
+html, body, #root { height: 100%; }
+
+ul, ol { margin: 0 0 1rem; padding: 0 0 0 1rem; }
+
+table { border-collapse: collapse; }
+th { text-align: left; border-bottom: 1px solid white; }
+td { vertical-align: middle; }
+
+table:not(th){
+    font-weight: 500;
+}
+
+/* Glass Login */
+
+
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    background: rgb(6,5,4);
+    background: linear-gradient(99deg, rgba(6,5,4,1) 14%, rgba(0,255,251,1) 94%);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.profile {
+    background-image: url(./images/profile.jpg);
+    background-size:     cover;                  
+    background-repeat:   no-repeat;
+    background-position: center right;  
+    align-self: center;
+    border-radius: 50%;
+    height: 9rem;
+    width: 9rem;
+    background-color: gray;
+}
+
+.glass-login {
+    width: 28rem;
+    padding: 5rem;
+    background-color: #5f5f5f;
+    align-items: center;
+    align-self: center;
+    border-radius: 50px;
+    
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.18);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.6px);
+    -webkit-backdrop-filter: blur(7.6px);
+    border: 1px solid rgba(255, 255, 255, 0.21);
+}
+
+form input {
+    padding: 1rem;
+    text-align: center;
+    border-radius: 30px;
+    font-size: 1rem;
+    background: none;
+    color: white;
+} 
+
+input {
+    width: 100%;
+    margin-top: 1rem;
+    border: white;
+    color: white;
+    outline: none;
+    opacity: 0.6;
+    border: solid 1px white;
+} 
+
+input::placeholder {
+    opacity: 0.6;
+    color: white;
+}
+
+input:focus {
+    opacity: 1;
+    border: solid 1px white;
+    transition: .5s ease;
+}
+
+input:focus::placeholder {
+    opacity: 1;
+    transition: .5s ease;
+}
+
+input:hover {
+    opacity: 1;
+    transition: .5s ease;
+}
+input:hover::placeholder {
+    opacity: 1;
+    transition: .5s ease;
+}
+.profile-container{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2rem;
+}
+
+.button  {
+    opacity: 1;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+
+    
+    background-color: #38a9ba;
+    border: none;
+
+    box-shadow: 0 7px 99px 0 rgba(82, 161, 174, 0.3);
+    cursor: pointer;
+}
+
+.button:hover  {
+    background-color: #2d8795;
+    transition: .5s ease;
+}
+
+@media only screen and (max-width: 1200px) {
+    .glass-login {
+        max-width: 60vw;
+        
+  }
+}
+
+@media only screen and (max-width: 600px) {
+    .glass-login {
+        max-width: 80vw;
+        padding: 4rem;
+  }
+}
