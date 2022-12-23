@@ -87,7 +87,7 @@ body {
     background-size:     cover;                  
     background-repeat:   no-repeat;
     background-position: center center;  
-    transition: 1.5s ease;
+    transition: 1s ease;
 }
 
 .container {
@@ -142,7 +142,7 @@ input {
     border: white;
     color: white;
     outline: none;
-    opacity: 0.6;
+    opacity: 1;
     border: solid 1px white;
 } 
 
@@ -150,6 +150,8 @@ input::placeholder {
     opacity: 0.6;
     color: white;
 }
+
+
 
 input:focus {
     opacity: 1;
@@ -223,6 +225,8 @@ input:hover::placeholder {
     /* border-color: #cc3743; */
     border-color: #38a9ba;
     padding: 10px 13px;
+    min-width: 45px;
+    text-align: center;
   }
   .product-labels__title {
     font-family: "Dosis", sans-serif;
